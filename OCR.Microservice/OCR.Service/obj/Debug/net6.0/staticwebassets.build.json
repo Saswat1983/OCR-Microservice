@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "msXzjXLc+aD7mRYmZrdE0DM3E4MU+dgpYMGR034h2gA=",
+  "Source": "OCR.Api.Service",
+  "BasePath": "_content/OCR.Api.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

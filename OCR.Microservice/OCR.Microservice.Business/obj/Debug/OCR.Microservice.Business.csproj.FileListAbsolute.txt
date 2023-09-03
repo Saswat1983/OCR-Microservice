@@ -1,0 +1,6 @@
+D:\Saswat\Practice\Code\OCR.Microservice\OCR.Microservice\OCR.Microservice.Business\bin\Debug\OCR.Microservice.Business.dll
+D:\Saswat\Practice\Code\OCR.Microservice\OCR.Microservice\OCR.Microservice.Business\bin\Debug\OCR.Microservice.Business.pdb
+D:\Saswat\Practice\Code\OCR.Microservice\OCR.Microservice\OCR.Microservice.Business\obj\Debug\OCR.Microservice.Business.csprojAssemblyReference.cache
+D:\Saswat\Practice\Code\OCR.Microservice\OCR.Microservice\OCR.Microservice.Business\obj\Debug\OCR.Microservice.Business.csproj.CoreCompileInputs.cache
+D:\Saswat\Practice\Code\OCR.Microservice\OCR.Microservice\OCR.Microservice.Business\obj\Debug\OCR.Microservice.Business.dll
+D:\Saswat\Practice\Code\OCR.Microservice\OCR.Microservice\OCR.Microservice.Business\obj\Debug\OCR.Microservice.Business.pdb

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\OCR.Api.Service.props" />
-</Project>

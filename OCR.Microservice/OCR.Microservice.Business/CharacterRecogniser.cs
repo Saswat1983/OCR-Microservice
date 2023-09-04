@@ -11,12 +11,9 @@ namespace OCR.Microservice.Business
         {
             OcrResult result = null;
             IronTesseract ocr = new IronTesseract();
-            using (OcrInput input = new OcrInput())
+            using (OcrInput input = new OcrInput(fileContent))
             {
-                // We can also select specific PDF page numnbers to OCR
-                input.AddPdf("example.pdf", "password");
                 result = ocr.Read(input);
-                
             }
             return result.Text;
         }

@@ -93,6 +93,12 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OCR.Microservice.Model\OCR.Microservice.Model.csproj">
+      <Project>{E42AC6D9-0B3E-411B-B5CB-C93EF8E95EA3}</Project>
+      <Name>OCR.Microservice.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\IronSoftware.Native.PdfModel.2023.8.17287\build\net\IronSoftware.Native.PdfModel.targets" Condition="Exists('..\packages\IronSoftware.Native.PdfModel.2023.8.17287\build\net\IronSoftware.Native.PdfModel.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

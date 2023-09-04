@@ -290,6 +290,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OCR.Microservice.Business\OCR.Microservice.Business.csproj">
+      <Project>{fe6406d5-69ae-476e-8877-36ddecc433b9}</Project>
+      <Name>OCR.Microservice.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OCR.Microservice.Model\OCR.Microservice.Model.csproj">
       <Project>{E42AC6D9-0B3E-411B-B5CB-C93EF8E95EA3}</Project>
       <Name>OCR.Microservice.Model</Name>

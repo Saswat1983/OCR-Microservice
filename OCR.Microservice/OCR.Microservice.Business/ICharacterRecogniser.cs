@@ -4,7 +4,7 @@ using static OCR.Microservice.Model.Constants;
 
 namespace OCR.Microservice.Business
 {
-    interface ICharacterRecogniser
+    public interface ICharacterRecogniser
     {
         string ReturnContent(Byte[] fileContent, FileType fileType);
     }

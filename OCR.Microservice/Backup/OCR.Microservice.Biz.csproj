@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <ProjectGuid>{401F9B27-9A2C-4D23-AC0B-293AFEE0313B}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CharacterRecogniser.cs" />
+    <Compile Include="ICharacterRecogniser.cs" />
+    <Compile Include="IocBootstrap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OCR.Microservice.Model\OCR.Microservice.Model.csproj">
+      <Project>{e42ac6d9-0b3e-411b-b5cb-c93ef8e95ea3}</Project>
+      <Name>OCR.Microservice.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\packages\IronSoftware.Native.PdfModel.2023.8.17287\build\net\IronSoftware.Native.PdfModel.targets" Condition="Exists('..\packages\IronSoftware.Native.PdfModel.2023.8.17287\build\net\IronSoftware.Native.PdfModel.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\IronSoftware.Native.PdfModel.2023.8.17287\build\net\IronSoftware.Native.PdfModel.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IronSoftware.Native.PdfModel.2023.8.17287\build\net\IronSoftware.Native.PdfModel.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+    <Error Condition="!Exists('..\packages\IronOcr.2023.8.34\build\net\IronOcr.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IronOcr.2023.8.34\build\net\IronOcr.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Import Project="..\packages\IronOcr.2023.8.34\build\net\IronOcr.targets" Condition="Exists('..\packages\IronOcr.2023.8.34\build\net\IronOcr.targets')" />
+</Project>
